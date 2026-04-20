@@ -5,13 +5,132 @@
   <meta name="viewport" content="width=device-width">
   <title>TP Infovis - Matías Chiffone</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 8px; }
-    .flourish-embed { max-width: 800px; margin: 0 auto; }
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px; 
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 { 
+      color: #2c3e50; 
+      border-bottom: 2px solid #2c3e50; 
+      padding-bottom: 8px; 
+    }
+    p {
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
+
 <body>
+
   <h1>Trabajo Práctico Infovis - Matías Chiffone</h1>
-  <div class="flourish-embed flourish-chart" data-src="visualisation/28382498"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28382498/thumbnail" width="100%" alt="visualization" /></noscript></div>
+
+  <p>
+    Este proyecto analiza mi rendimiento en ajedrez a partir de datos personales,
+    explorando cómo distintos factores influyen en mi desempeño y evolución.
+  </p>
+
+  <!-- Evolución Elo -->
+  <iframe 
+    title="¿Cómo evolucionó mi elo a lo largo del tiempo?" 
+    src="https://datawrapper.dwcdn.net/fYnCq/2/" 
+    scrolling="no" 
+    frameborder="0" 
+    style="width: 0; min-width: 100% !important; border: none;" 
+    height="580">
+  </iframe>
+
+  <script>
+    window.addEventListener("message",function(a){
+      if(void 0!==a.data["datawrapper-height"]){
+        var e=document.querySelectorAll("iframe");
+        for(var t in a.data["datawrapper-height"])
+          for(var r,i=0;r=e[i];i++)
+            if(r.contentWindow===a.source){
+              r.style.height=a.data["datawrapper-height"][t]+"px";
+            }
+      }
+    });
+  </script>
+
+  <!-- Dispositivo -->
+  <div class='tableauPlaceholder' id='viz1776707145531' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='' src='https://public.tableau.com/static/images/TP/TPInfovisAjedrezMatasChiffone/Sheet1/1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https://public.tableau.com/' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='TPInfovisAjedrezMatasChiffone/Sheet1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/TP/TPInfovisAjedrezMatasChiffone/Sheet1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
+
+  <script>
+    var divElement = document.getElementById('viz1776707145531');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='100%';
+    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <!-- Dashboard Lugar -->
+  <div class='tableauPlaceholder' id='viz1776709905328' style='position: relative; margin-top: 40px;'>
+    <noscript>
+      <a href='#'>
+        <img alt='¿Cómo influye el lugar en mi rendimiento?' src='https://public.tableau.com/static/images/TP/TPInfovis2AjedrezMatasChiffone/Dashboard1/1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https://public.tableau.com/' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='TPInfovis2AjedrezMatasChiffone/Dashboard1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/TP/TPInfovis2AjedrezMatasChiffone/Dashboard1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
+
+  <script>
+    var divElement2 = document.getElementById('viz1776709905328');
+    var vizElement2 = divElement2.getElementsByTagName('object')[0];
+    if (divElement2.offsetWidth > 800) {
+      vizElement2.style.width='1000px';
+      vizElement2.style.height='827px';
+    } else if (divElement2.offsetWidth > 500) {
+      vizElement2.style.width='1000px';
+      vizElement2.style.height='827px';
+    } else {
+      vizElement2.style.width='100%';
+      vizElement2.style.height='777px';
+    }
+    var scriptElement2 = document.createElement('script');
+    scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
+  </script>
+
 </body>
 </html>
